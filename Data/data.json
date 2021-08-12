@@ -1,0 +1,70 @@
+  {
+      "categories" : [
+    {
+        "id": "1",
+        "name": "Cookie store ",
+        "image":"https://handletheheat.com/wp-content/uploads/2020/10/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9-637x637-1.jpg",
+        "treading":"unset",
+        "newest":"set"
+        
+
+    },
+    {
+        "id": "2",
+        "name": "Pizza store ",
+        "image":"https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
+        "treading":"set",
+        "newest":"unset"
+
+    },
+    {
+        "id": "3",
+        "name": "Beer store ",
+        "image":"https://images.newindianexpress.com/uploads/user/imagelibrary/2021/4/11/w1200X800/Post_tests-.jpg",
+        "treading":"set",
+        "newest":"unset"
+
+    },
+    {
+        "id": "4",
+        "name": "Clothes store ",
+        "image":"https://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/er_main_wide/public/2019/08/best_online_clothes_shops.jpg?itok=4QdepBmh",
+        "treading":"unset",
+        "newest":"set"
+
+    },
+    {
+        "id": "5",
+        "name": "House store ",
+        "image":"https://www.investopedia.com/thmb/lUMUQyheogwYhtdQ_p8aBDNG9fg=/680x440/filters:fill(auto,1)/rent_house_73089751-5bfc333346e0fb002602ddbe.jpg",
+        "treading":"unset",
+        "newest":"set"
+
+    },
+    {
+        "id": "6",
+        "name": "Car store ",
+        "image":"https://i.pinimg.com/originals/d8/80/c0/d880c0d9275c41c2e6a5d1315c758908.jpg",
+        "treading":"set",
+        "newest":"unset"
+
+    },
+    {
+        "id": "7",
+        "name": "Mobile store ",
+        "image":"https://i.gadgets360cdn.com/products/large/asus-rogphone2-db-800x719-1563875000.jpg",
+        "treading":"unset",
+        "newest":"set"
+
+    },
+    {
+        "id": "8",
+        "name": "Books store ",
+        "image":"https://s26162.pcdn.co/wp-content/uploads/2018/12/11-bookstores-6-three-lives-2.w710.h473.2x.jpg",
+        "treading":"set",
+        "newest":"unset"
+
+    }
+
+]
+  }
