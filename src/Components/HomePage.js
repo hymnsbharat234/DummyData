@@ -12,7 +12,8 @@ const HomePage = () => {
     const [checked, setChecked] = useState();
     const [treading1,settreading1]=useState(false);
     const [newest1,setnewest1] = useState(false);
-
+    const [hide,sethide] = useState(null);
+   
     const dispatch=useDispatch()
 
     const {CategoriesProduct}=useSelector((state) =>state.Category)
@@ -28,47 +29,83 @@ const HomePage = () => {
     useEffect(()=>{
         dispatch(BussinessStore())
     })
+    const getId=(id)=>{
+      console.log("rex",id)
+
+
+    }
 
     const renderSpecialists=((item)=>{
      
        
-        if(treading1 || newest1 ){
-          console.log("filter",treading1,newest1)
-          const {id,name,treading,image,newest}=item
-          if(treading==="set"){
-            console.log("trnding",treading)
-            return (
-              <View>
-  
-                  <BussinessList id={id} name={name} image={image} treading={treading} newest={newest}/>
-                 
-              </View>
-          )
-            
-
+        if(treading1){
+          if(newest1){
+            const {id,name,treading,image,newest}=item
+            if(newest==="set" &&  treading==="set"){
+              return (
+                <View>
+    
+                    <BussinessList id={id} setHide={getId} name={name} image={image} treading={treading} newest={newest}/>
+                   
+                </View>
+            )
           }
-          
-          else if(newest==="set" ){
-            console.log("newest",newest)
-            return (
-              <View>
-  
-                  <BussinessList id={id} name={name} image={image} treading={treading} newest={newest}/>
-                 
-              </View>
-          )
-
-          }else{
+          else{
             return
           }
-            
-        }else{
-          console.log("all data", treading1,newest1)
+        }
+          else{
+            const {id,name,treading,image,newest}=item
+            if(treading==="set"){
+              return (
+                <View>
+    
+                    <BussinessList id={id} setHide={getId} name={name} image={image} treading={treading} newest={newest}/>
+                   
+                </View>
+            )
+              }
+              else{
+                return
+              }
+          }
+          
+      }
+        else if(newest1)
+        {
+          const {id,name,treading,image,newest}=item
+          if(treading1){
+            if(newest==="set" &&  treading==="set"){
+              return (
+                <View>
+    
+                    <BussinessList id={id} setHide={getId} name={name} image={image} treading={treading} newest={newest}/>
+                   
+                </View>
+            )
+          }
+        }
+          else{
+            if(newest==="set" ){
+              return (
+                <View>
+    
+                    <BussinessList id={id} setHide={getId} name={name} image={image} treading={treading} newest={newest}/>
+                   
+                </View>
+            )
+  
+            }else{
+              return
+            }
+          }
+        }
+        else{
           const {id,name,treading,image,newest}=item
             return (
                 <View>
     
-                    <BussinessList id={id} name={name} image={image} treading={treading} newest={newest}/>
+                    <BussinessList id={id} setHide={sethide} name={name} image={image} treading={treading} newest={newest}/>
                    
                 </View>
             )
